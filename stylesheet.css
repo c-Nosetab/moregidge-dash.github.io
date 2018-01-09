@@ -1,0 +1,162 @@
+/*
+  main green: #2DCE9B
+  font-color: #444
+
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: sans-serif;
+  background-color: #F7F8F9;
+}
+
+.sidebar,
+.main-content {
+  float: left;
+}
+
+.sidebar {
+  width: 17vw;
+  height: 100vh;
+
+  background-color: white;
+}
+
+.sidebar-top {
+  padding: 20px 0 20px 35px;
+  height: 92vh;
+}
+
+.logo {
+  height: 5vh;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.logo img {
+  height: 25px;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.logo-text {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-link:link,
+.logo-link:visited {
+  text-decoration: none;
+  color: #444;
+}
+
+.navigation {
+}
+
+.nav-list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.nav-title {
+  color: #999;
+  font-size: 60%;
+  text-transform: uppercase;
+  pointer-events: none;
+
+  margin-bottom: 10px;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+  font-size: 90%;
+}
+
+li a:link,
+li a:visited {
+  color: rgb(124, 124, 124);
+  text-decoration: none;
+  font-weight: lighter;
+  transition: all .4s;
+}
+
+li a:hover {
+  color: black;
+}
+
+li.selected {
+  border-right: 4px solid #1D97A2;
+}
+
+li.selected a:link,
+li.selected a:visited {
+  color: #444;
+  font-weight: bold;
+}
+
+.logout-area {
+  margin-top: 10px;
+  border-top: 1px solid rgba(119, 119, 119, .2);
+  height: 8vh;
+  min-height: 100px;
+  padding-top: 10px;
+  padding-left: 35px;
+}
+
+.logout-area p {
+  font-size: 80%;
+}
+
+.logout-arrow {
+  border-left: 2px solid #2DCE9B;
+  border-top: 2px solid #2DCE9B;
+  border-bottom: 2px solid #2DCE9B;
+  border-radius: 50px;
+  color: #2DCE9B;
+  padding-left: 2px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.logout-link:link,
+.logout-link:visited {
+  color: rgb(124, 124, 124);
+  text-decoration: none;
+  transition: all .4s;
+}
+
+.logout-link:hover {
+  color: black;
+}
+
+
+
+
+
+
+.main-content {
+  background-color: #F7F8F9;
+  width: 83vh;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+
+
