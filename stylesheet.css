@@ -255,7 +255,7 @@ li.selected a:visited {
 .activities,
 .milestones {
   background-color: white;
-  box-shadow: 0 1px 10px #bbb;
+  box-shadow: 0 1px 5px #ddd;
   margin-top: 30px;
 }
 
@@ -279,6 +279,7 @@ li.selected a:visited {
   float: right;
   height: 15px;
   cursor: pointer;
+  opacity: .5;
 }
 
 .status {
@@ -353,6 +354,7 @@ li.selected a:visited {
 .activities {
   float: left;
   margin-right: 20px;
+  width: 64%;
 }
 
 .activity {
@@ -415,13 +417,62 @@ li.selected a:visited {
 
 }
 
-.act-comment {
+.act-comment:link,
+.act-comment:visited {
   font-size: 80%;
   height: 50%;
+  text-decoration: none;
   color: #2DCE9B;
+  transition: all .4s;
+}
+
+.act-comment:hover {
+  color: rgb(28, 126, 95);
+}
+
+.act-comment:active {
+  color: rgb(37, 167, 126);
 }
 
 .milestones {
-  width: 39.5%;
+  width: 33%;
   float: right;
+}
+
+.milestone {
+  padding: 10px 20px;
+  height: 66px;
+  border-bottom: 1px solid rgba(119, 119, 119, .2);
+}
+
+.mile-text {
+  float: left;
+}
+
+
+.mile-title {
+  font-size: 90%;
+  color: #777;
+  margin-bottom: -4px;
+}
+
+.mile-date {
+  font-size: 90%;
+  color: #555;
+  font-weight: bold;
+}
+
+.mile-status {
+  float: right;
+  background: #1D97A2;
+  padding: 2px 5px;
+  margin-top: 10px;
+  border-radius: 2px;
+
+  font-size: 50%;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: white;
+
+  pointer-events: none;
 }
