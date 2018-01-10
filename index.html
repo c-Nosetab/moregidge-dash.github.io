@@ -9,7 +9,7 @@
   <script src="main.js"></script>
 </head>
 <body>
-  <div class="sidebar">
+  <div class="sidebar col-2">
     <div class="sidebar-top">
       <div class="logo">
         <a href="#" class="logo-link">
@@ -20,14 +20,14 @@
 
       <div class="navigation">
         <ul class="nav-list">
-          <p class="nav-title">Overview</p>
+          <p class="sub-title nav">Overview</p>
           <li class="selected"><a href="#">Dashboard</a></li>
           <li><a href="#">Mortgadge Application</a></li>
           <li><a href="#">Key Contacts</a></li>
         </ul>
 
         <ul class="nav-list">
-          <p class="nav-title">Your Account</p>
+          <p class="sub-title nav">Your Account</p>
           <li><a href="#">Settings</a></li>
           <li><a href="#">Support & Faq</a></li>
         </ul>
@@ -39,24 +39,26 @@
     </div>
   </div>
 
-  <div class="main-content">
+  <div class="main-content col-10">
     <div class="profile-info">
-      <img src="#" alt="profile image" class="profile-image">
+      <img src="img/profile_picture.jpg" alt="profile image" class="profile-image">
       <div class="profile-text">
-        <h1>Welcome Back, <a href="#">Olivia</a></h1>
+        <h1>Welcome back, <a href="#">Christopher</a></h1>
         <h4>You're almost on your way to a new home</h4>
       </div>
     </div>
 
-    <div class="application">
+    <div class="application col-12">
       <div class="header">
         <p class="title">Your Mortgage Application</p>
-        <p class="question-mark"></p>
+        <img src="img/question-mark.png" alt="question mark" class="question-mark">
       </div>
 
       <div class="status">
-        <div class="status-bar"></div>
-        <img src="#" alt="Almost Home" class="home">
+        <div class="status-bar">
+          <div class="fill-bar"></div>
+        </div>
+        <img src="img/house.png" alt="Almost Home" class="home">
       </div>
 
       <div class="steps">
@@ -64,6 +66,9 @@
           <p class="sub-title">Currently</p>
           <p class="step">Waiting for approval from underwriter.</p>
         </div>
+
+        <div class="divider"></div>
+
         <div class="next-step">
           <p class="sub-title">Next Step</p>
           <p class="step">Sign documents for lawyer</p>
@@ -71,9 +76,91 @@
       </div>
     </div>
 
-    <div class="activity"></div>
+    <div class="row col-12">
+      <div class="activities col-7">
+        <div class="header">
+          <p class="title">Activity</p>
+          <img src="img/question-mark.png" alt="question mark" class="question-mark">
+        </div>
 
-    <div class="milestones"></div>
+        <div class="activity">
+          <div class="act-symbol comment"></div>
+          <div class="act-text">
+            <div class="act-summary">
+              <p class="act-title">Sam commented on your document:</p>
+              <p class="act-info">Thanks for the quick turnaround. Sending it over...</p>
+            </div>
+            <div class="act-bits">
+              <p class="act-updated">11 hrs ago</p>
+              <p class="act-comment">View Comment</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="act-symbol comment"></div>
+          <div class="act-text">
+            <div class="act-summary">
+              <p class="act-title">Sam commented on your document:</p>
+              <p class="act-info">You're missing a signature on page 6</p>
+            </div>
+            <div class="act-bits">
+              <p class="act-updated">1 day ago</p>
+              <p class="act-comment">View Comment</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="act-symbol comment"></div>
+          <div class="act-text">
+            <div class="act-summary">
+              <p class="act-title">You uploaded a new document:</p>
+              <p class="act-info">Mortgage_OS_102417.pdf</p>
+            </div>
+            <div class="act-bits">
+              <p class="act-updated">2 days ago</p>
+              <p class="act-comment">View Document</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="act-symbol comment"></div>
+          <div class="act-text">
+            <div class="act-summary">
+              <p class="act-title">Sam commented on your document:</p>
+              <p class="act-info">Can you sign the document and re-attach</p>
+            </div>
+            <div class="act-bits">
+              <p class="act-updated">2 days ago</p>
+              <p class="act-comment">View Comment</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="act-symbol comment"></div>
+          <div class="act-text">
+            <div class="act-summary">
+              <p class="act-title">Sam commented on your document:</p>
+              <p class="act-info">You forgot to fill out some of the...</p>
+            </div>
+            <div class="act-bits">
+              <p class="act-updated">1 day ago</p>
+              <p class="act-comment">View Comment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="milestones col-4">
+        <div class="header">
+          <p class="title">Milestones</p>
+          <img src="img/question-mark.png" alt="question mark" class="question-mark">
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
