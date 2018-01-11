@@ -1,8 +1,8 @@
   var currentSelection = document.querySelector(".selected");
   var sidebar = document.querySelector(".sidebar");
 
-  function changeSelection() {
-    var newSelection = event.path[1];
+  function changeSelection(item) {
+    var newSelection = item;
 
     if (newSelection.classList.value !== "nav-list") {
       currentSelection.classList.remove("selected");
@@ -11,8 +11,8 @@
     }
   }
 
-  function toggleSidebar() {
-    var check = event.path[1].classList.value;
+  function toggleSidebar(e) {
+    var check = e.path[1].classList.value;
 
     if (check == "hamburger") {
       if (sidebar.style.display == "") {
