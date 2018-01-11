@@ -362,10 +362,6 @@ li.selected a:visited {
   height: 25px;
   margin-top: 10px;
   float: left;
-  /* position: absolute;
-  top: 30%;
-  left: 97%;
-  transform: translate(-100%, -50%); */
 }
 
 .steps {
@@ -438,7 +434,6 @@ li.selected a:visited {
 }
 
 .act-summary {
-  /* width: 66%; */
 }
 
 .act-title {
