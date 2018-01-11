@@ -577,6 +577,9 @@ li.selected a:visited {
 
 @media only screen and (max-width: 530px) {
 
+  body {
+    font-size: 15px;
+  }
 
   .profile-text h1 {
     font-size: 140%;
