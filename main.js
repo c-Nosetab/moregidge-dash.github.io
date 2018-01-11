@@ -4,7 +4,7 @@
   var sidebar = $(".sidebar");
 
   $('.hamburger').on('touchstart', function(){
-    $('hamburger').css('background-color', 'red');
+    $('hamburger').css('background', 'red');
   });
 
   function changeSelection(item) {
