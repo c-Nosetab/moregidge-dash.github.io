@@ -8,16 +8,16 @@
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
 </head>
 <body>
-  <div class="sidebar col-2">
-    <div class="sidebar-top">
-      <div class="logo">
+  <nav class="sidebar col-2">
+    <section class="sidebar-top">
+      <article class="logo">
         <a href="#" class="logo-link">
           <img src="img/logo.png" alt="logo">
           <p class="logo-text">Moregidge</p>
         </a>
-      </div>
+      </article>
 
-      <div class="navigation">
+      <section class="navigation">
         <ul class="nav-list">
           <p class="sub-title nav">Overview</p>
           <li class="selected" onclick="changeSelection(this)"><a href="#">Dashboard</a></li>
@@ -30,28 +30,28 @@
           <li onclick="changeSelection(this)"><a href="#">Settings</a></li>
           <li onclick="changeSelection(this)"><a href="#">Support & Faq</a></li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="logout-area">
+    <section class="logout-area">
       <a href="#" class="logout-link"><p class="logout"><span class="logout-arrow">→</span>Logout</p></a>
-    </div>
-  </div>
+    </section>
+  </nav>
 
-  <div class="hamburger" onclick="toggleSidebar(event)">
+  <section class="hamburger" onclick="toggleSidebar(event)">
     <img src="img/hamburger.png" alt="">
-  </div>
+  </section>
 
   <div class="main-content col-10" onclick="toggleSidebar(event)">
-    <div class="profile-info">
+    <section class="profile-info">
       <img src="img/profile_picture.jpg" alt="profile image" class="profile-image">
-      <div class="profile-text">
+      <article class="profile-text">
         <h1>Welcome back, <a href="#">Christopher</a></h1>
         <h4>You're almost on your way to a new home</h4>
-      </div>
-    </div>
+      </article>
+    </section>
 
-    <div class="application col-12">
+    <section class="application col-12">
       <div class="header">
         <p class="title">Your Mortgage Application</p>
         <img src="img/question-mark.png" alt="question mark" class="question-mark">
@@ -77,134 +77,132 @@
           <p class="step">Sign documents for lawyer</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row col-12">
-      <div class="activities">
-        <div class="header">
-          <p class="title">Activity</p>
-          <img src="img/question-mark.png" alt="question mark" class="question-mark">
-        </div>
-
-        <div class="activity">
-          <div class="act-symbol comment">
-            <img src="img/comment.png" alt="document" class="symbol">
-          </div>
-          <div class="act-text">
-            <div class="act-summary">
-              <p class="act-title">Sam commented on your document:</p>
-              <p class="act-info">Thanks for the quick turnaround. Sending it over...</p>
-            </div>
-            <div class="act-bits">
-              <p class="act-updated">11 hrs ago</p>
-               <a href="#" class="act-comment">View Comment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="activity">
-          <div class="act-symbol comment">
-            <img src="img/comment.png" alt="document" class="symbol">
-          </div>
-          <div class="act-text">
-            <div class="act-summary">
-              <p class="act-title">Sam commented on your document:</p>
-              <p class="act-info">You're missing a signature on page 6</p>
-            </div>
-            <div class="act-bits">
-              <p class="act-updated">1 day ago</p>
-              <a href="#" class="act-comment">View Comment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="activity">
-          <div class="act-symbol comment">
-            <img src="img/document.png" alt="document" class="symbol">
-          </div>
-          <div class="act-text">
-            <div class="act-summary">
-              <p class="act-title">You uploaded a new document:</p>
-              <p class="act-info">Mortgage_OS_102417.pdf</p>
-            </div>
-            <div class="act-bits">
-              <p class="act-updated">2 days ago</p>
-              <a href="#" class="act-comment">View Document</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="activity">
-          <div class="act-symbol comment">
-            <img src="img/comment.png" alt="document" class="symbol">
-          </div>
-          <div class="act-text">
-            <div class="act-summary">
-              <p class="act-title">Sam commented on your document:</p>
-              <p class="act-info">Can you sign the document and re-attach</p>
-            </div>
-            <div class="act-bits">
-              <p class="act-updated">2 days ago</p>
-              <a href="#" class="act-comment">View Comment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="activity">
-          <div class="act-symbol comment">
-            <img src="img/comment.png" alt="document" class="symbol">
-          </div>
-          <div class="act-text">
-            <div class="act-summary">
-              <p class="act-title">Sam commented on your document:</p>
-              <p class="act-info">You forgot to fill out some of the...</p>
-            </div>
-            <div class="act-bits">
-              <p class="act-updated">1 day ago</p>
-              <a href="#" class="act-comment">View Comment</a>
-            </div>
-          </div>
-        </div>
+    <section class="activities">
+      <div class="header">
+        <p class="title">Activity</p>
+        <img src="img/question-mark.png" alt="question mark" class="question-mark">
       </div>
 
-      <div class="milestones">
-        <div class="header">
-          <p class="title">Milestones</p>
-          <img src="img/question-mark.png" alt="question mark" class="question-mark">
+      <article class="activity">
+        <div class="act-symbol comment">
+          <img src="img/comment.png" alt="document" class="symbol">
         </div>
-
-        <div class="milestone">
-          <div class="mile-text">
-            <div class="mile-title">Application Submitted</div>
-            <div class="mile-date">Nov 14, 2017</div>
+        <div class="act-text">
+          <div class="act-summary">
+            <p class="act-title">Sam commented on your document:</p>
+            <p class="act-info">Thanks for the quick turnaround. Sending it over...</p>
           </div>
-          <div class="mile-status">Completed</div>
-        </div>
-
-        <div class="milestone">
-          <div class="mile-text">
-            <div class="mile-title">Review Application</div>
-            <div class="mile-date">Nov 16, 2017</div>
-          </div>
-          <div class="mile-status">In 2 Days</div>
-        </div>
-
-        <div class="milestone">
-          <div class="mile-text">
-            <div class="mile-title">Submit to underwriter</div>
-            <div class="mile-date">Nov 18, 2017</div>
+          <div class="act-bits">
+            <p class="act-updated">11 hrs ago</p>
+              <a href="#" class="act-comment">View Comment</a>
           </div>
         </div>
+      </article>
 
-        <div class="milestone">
-          <div class="mile-text">
-            <div class="mile-title">Lender Approval</div>
-            <div class="mile-date">Nov 24, 2017</div>
+      <article class="activity">
+        <div class="act-symbol comment">
+          <img src="img/comment.png" alt="document" class="symbol">
+        </div>
+        <div class="act-text">
+          <div class="act-summary">
+            <p class="act-title">Sam commented on your document:</p>
+            <p class="act-info">You're missing a signature on page 6</p>
+          </div>
+          <div class="act-bits">
+            <p class="act-updated">1 day ago</p>
+            <a href="#" class="act-comment">View Comment</a>
           </div>
         </div>
+      </article>
 
+      <article class="activity">
+        <div class="act-symbol comment">
+          <img src="img/document.png" alt="document" class="symbol">
+        </div>
+        <div class="act-text">
+          <div class="act-summary">
+            <p class="act-title">You uploaded a new document:</p>
+            <p class="act-info">Mortgage_OS_102417.pdf</p>
+          </div>
+          <div class="act-bits">
+            <p class="act-updated">2 days ago</p>
+            <a href="#" class="act-comment">View Document</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity">
+        <div class="act-symbol comment">
+          <img src="img/comment.png" alt="document" class="symbol">
+        </div>
+        <div class="act-text">
+          <div class="act-summary">
+            <p class="act-title">Sam commented on your document:</p>
+            <p class="act-info">Can you sign the document and re-attach</p>
+          </div>
+          <div class="act-bits">
+            <p class="act-updated">2 days ago</p>
+            <a href="#" class="act-comment">View Comment</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity">
+        <div class="act-symbol comment">
+          <img src="img/comment.png" alt="document" class="symbol">
+        </div>
+        <div class="act-text">
+          <div class="act-summary">
+            <p class="act-title">Sam commented on your document:</p>
+            <p class="act-info">You forgot to fill out some of the...</p>
+          </div>
+          <div class="act-bits">
+            <p class="act-updated">1 day ago</p>
+            <a href="#" class="act-comment">View Comment</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="milestones">
+      <div class="header">
+        <p class="title">Milestones</p>
+        <img src="img/question-mark.png" alt="question mark" class="question-mark">
       </div>
-    </div>
+
+      <article class="milestone">
+        <div class="mile-text">
+          <div class="mile-title">Application Submitted</div>
+          <div class="mile-date">Nov 14, 2017</div>
+        </div>
+        <div class="mile-status">Completed</div>
+      </article>
+
+      <article class="milestone">
+        <div class="mile-text">
+          <div class="mile-title">Review Application</div>
+          <div class="mile-date">Nov 16, 2017</div>
+        </div>
+        <div class="mile-status">In 2 Days</div>
+      </article>
+
+      <article class="milestone">
+        <div class="mile-text">
+          <div class="mile-title">Submit to underwriter</div>
+          <div class="mile-date">Nov 18, 2017</div>
+        </div>
+      </article>
+
+      <article class="milestone">
+        <div class="mile-text">
+          <div class="mile-title">Lender Approval</div>
+          <div class="mile-date">Nov 24, 2017</div>
+        </div>
+      </article>
+
+    </section>
   </div>
 
   <script src="main.js"></script>
