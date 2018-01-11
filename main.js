@@ -1,11 +1,14 @@
-
+$(document).ready(function() {
+  $('.hamburger').on('touch', function(event){
+    toggleSidebar(event);
+  });
+  $('main-content').on('touch', function(event){
+    toggleSidebar(event);
+  });
+})
 
   var currentSelection = $(".selected");
   var sidebar = $(".sidebar");
-
-  $('.hamburger').on('touchstart', function(){
-    $('hamburger').css('background', 'red');
-  });
 
   function changeSelection(item) {
     var newSelection = $(item);
@@ -15,8 +18,7 @@
   }
 
   function toggleSidebar(e) {
-    var check = $(e.path[0])[0].classList;
-    console.log(sidebar.css('display'));
+    var check = $(e.currentTarget)[0].className;
 
     if (check == "hamburger") {
       if (sidebar.css('display') == "none") {
