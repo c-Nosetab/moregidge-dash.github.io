@@ -31,3 +31,12 @@ $(document).ready(function() {
     }
   }
 
+  window.onresize = function() {
+    console.log('hi');
+    if (window.innerWidth > 1028) {
+      sidebar.css('display', 'block');
+    } else {
+      sidebar.css('display', 'none');
+    }
+  };
+
