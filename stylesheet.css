@@ -202,7 +202,6 @@ li.selected a:visited {
 .main-content {
   background-color: #F7F8F9;
   margin-left: 17vw;
-  /* width: 83vw; */
   min-height: 100vh;
   padding: 50px;
 }
@@ -406,7 +405,7 @@ li.selected a:visited {
 }
 
 .act-summary {
-  width: 66%;
+  /* width: 66%; */
 }
 
 .act-title {
@@ -497,4 +496,41 @@ li.selected a:visited {
   color: white;
 
   pointer-events: none;
+}
+
+
+/* MEDIA STUFF */
+
+@media only screen and (max-width: 1028px) {
+  .main-content {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .profile-info {
+    margin-bottom: 50px;
+  }
+
+  .application,
+  .activities,
+  .milestones {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+  body {
+    font-size: 10px;
+  }
 }
