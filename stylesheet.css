@@ -229,6 +229,7 @@ li.selected a:visited {
   margin-left: 17vw;
   min-height: 100vh;
   padding: 50px;
+  transition: all .5s;
 }
 
 .profile-info {
@@ -261,7 +262,7 @@ li.selected a:visited {
 .profile-text h1 a:visited {
   color: #2098A3;
   text-decoration: none;
-  transition: all .4s;
+  transition: color .4s;
 }
 
 .profile-text h1 a:hover {
@@ -323,6 +324,7 @@ li.selected a:visited {
   border-radius: 50px;
   background-color: #EEEEEE;
   overflow: hidden;
+  transition: all .5s;
 }
 
 .fill-bar {
@@ -534,7 +536,7 @@ li.selected a:visited {
 @media all and (max-width: 1028px) {
 
   body {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .profile-text {
