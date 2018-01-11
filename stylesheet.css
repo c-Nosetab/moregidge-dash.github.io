@@ -146,7 +146,7 @@ li a:visited {
   color: rgb(124, 124, 124);
   text-decoration: none;
   font-weight: lighter;
-  transition: all .4s;
+  transition: color .4s;
 }
 
 li a:hover {
@@ -198,7 +198,7 @@ li.selected a:visited {
   color: black;
 }
 
-
+/* #################  MAIN CONENT AREA #############################*/
 .main-content {
   background-color: #F7F8F9;
   margin-left: 17vw;
@@ -213,7 +213,7 @@ li.selected a:visited {
 }
 
 .profile-image {
-  height: 10vh;
+  height: 75px;
   border-radius: 50px;
   float: left;
   margin-right: 20px;
@@ -258,6 +258,8 @@ li.selected a:visited {
   box-shadow: 0 1px 5px #ddd;
   margin-top: 30px;
 }
+
+/* APPLICATION AREA #################################################### */
 
 .application {
   padding-bottom: 20px;
@@ -306,6 +308,25 @@ li.selected a:visited {
   overflow: hidden;
   transform: translateX(-40%);
   transition: all 1s;
+  animation: fadeInRight 1s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  40% {
+    translate: translateX(-60%);
+  }
+
+  75% {
+    transform: translateX(-39.5%);
+  }
+
+  100% {
+    transform: translateX(-40%);
+  }
 }
 
 .home {
@@ -334,7 +355,6 @@ li.selected a:visited {
 }
 
 .divider {
-  content: '';
   width: 1px;
   height: 100%;
   background-color: rgba(119, 119, 119, .2);
@@ -349,7 +369,7 @@ li.selected a:visited {
   font-size: 90%;
 }
 
-/* ACTIVITY AREA */
+/* ################# ACTIVITY AREA #####################################*/
 
 .activities {
   float: left;
@@ -433,6 +453,8 @@ li.selected a:visited {
 .act-comment:active {
   color: rgb(37, 167, 126);
 }
+
+/* MILESTONES AREA ########################################################## */
 
 .milestones {
   width: 33%;

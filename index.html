@@ -21,15 +21,15 @@
       <div class="navigation">
         <ul class="nav-list">
           <p class="sub-title nav">Overview</p>
-          <li class="selected"><a href="#">Dashboard</a></li>
-          <li><a href="#">Mortgadge Application</a></li>
-          <li><a href="#">Key Contacts</a></li>
+          <li class="selected" onclick="changeSelection(this)"><a href="#">Dashboard</a></li>
+          <li onclick="changeSelection(this)"><a href="#">Mortgadge Application</a></li>
+          <li onclick="changeSelection(this)"><a href="#">Key Contacts</a></li>
         </ul>
 
         <ul class="nav-list">
           <p class="sub-title nav">Your Account</p>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Support & Faq</a></li>
+          <li onclick="changeSelection(this)"><a href="#">Settings</a></li>
+          <li onclick="changeSelection(this)"><a href="#">Support & Faq</a></li>
         </ul>
       </div>
     </div>
@@ -181,7 +181,6 @@
             <div class="mile-title">Submit to underwriter</div>
             <div class="mile-date">Nov 18, 2017</div>
           </div>
-          <!-- <div class="mile-status">Completed</div> -->
         </div>
 
         <div class="milestone">
@@ -189,12 +188,24 @@
             <div class="mile-title">Lender Approval</div>
             <div class="mile-date">Nov 24, 2017</div>
           </div>
-          <!-- <div class="mile-status">Completed</div> -->
         </div>
 
       </div>
     </div>
   </div>
 
+  <script>
+    var currentSelection = document.querySelector('.selected');
+
+    function changeSelection() {
+      var newSelection = event.path[1];
+
+      if (newSelection.classList.value !== 'nav-list') {
+        currentSelection.classList.remove('selected');
+        currentSelection = newSelection;
+        newSelection.classList.add('selected');
+      }
+    }
+  </script>
 </body>
 </html>
