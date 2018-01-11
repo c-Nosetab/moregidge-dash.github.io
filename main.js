@@ -1,27 +1,31 @@
-  var currentSelection = document.querySelector(".selected");
-  var sidebar = document.querySelector(".sidebar");
+
+
+  var currentSelection = $(".selected");
+  var sidebar = $(".sidebar");
+
+  $('.hamburger').on('touchstart', function(){
+    $('hamburger').css('background-color', 'red');
+  });
 
   function changeSelection(item) {
-    var newSelection = item;
-
-    if (newSelection.classList.value !== "nav-list") {
-      currentSelection.classList.remove("selected");
-      currentSelection = newSelection;
-      newSelection.classList.add("selected");
-    }
+    var newSelection = $(item);
+    currentSelection.removeClass("selected");
+    currentSelection = $(newSelection);
+    newSelection.addClass("selected");
   }
 
   function toggleSidebar(e) {
-    var check = e.path[1].classList.value;
+    var check = $(e.path[0])[0].classList;
+    console.log(sidebar.css('display'));
 
     if (check == "hamburger") {
-      if (sidebar.style.display == "") {
-        sidebar.style.display = "block";
+      if (sidebar.css('display') == "none") {
+        sidebar.css('display', "block");
       } else {
-        sidebar.style.display = "";
+        sidebar.css('display', 'none');
       }
-    } else if (sidebar.style.display == "block" && window.innerWidth <= 1028) {
-      sidebar.style.display = "";
+    } else if (sidebar.css('display') == "block" && window.innerWidth <= 1028) {
+      sidebar.css('display',"none");
     }
   }
 

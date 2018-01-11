@@ -6,6 +6,7 @@
   <title>MOREGIDGE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
   <nav class="sidebar col-2">
@@ -27,7 +28,7 @@
 
         <ul class="nav-list">
           <p class="sub-title nav">Your Account</p>
-          <li onclick="changeSelection(this)"><a href="#">Settings</a></li>
+          <li onclick="changeSelection(this)" class="wow"><a href="#">Settings</a></li>
           <li onclick="changeSelection(this)"><a href="#">Support & Faq</a></li>
         </ul>
       </section>
@@ -38,7 +39,7 @@
     </section>
   </nav>
 
-  <section class="hamburger" onclick="toggleSidebar(event)" ontouchstart="toggleSidebar(event)">
+  <section class="hamburger" onclick="toggleSidebar(event)" on-touchstart="toggleSidebar(event)">
     <img src="img/hamburger.png" alt="">
   </section>
 
