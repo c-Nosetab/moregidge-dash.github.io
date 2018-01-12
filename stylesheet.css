@@ -664,8 +664,16 @@ li.selected a:visited {
 }
 
 @media all and (max-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+
   .profile-text {
     font-size: 100%;
     padding: 5px;
+  }
+
+  .status-bar {
+    width: 75%;
   }
 }
