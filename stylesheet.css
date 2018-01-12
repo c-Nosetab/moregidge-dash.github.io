@@ -526,7 +526,6 @@ li.selected a:visited {
   pointer-events: none;
 }
 
-
 /* MEDIA STUFF */
 
 @media all and (max-width: 1028px) {
