@@ -675,6 +675,11 @@ li.selected a:visited {
   .status-bar {
     width: 75%;
   }
+
+  .act-summary {
+    margin-left: 80px;
+  }
+
 }
-}
+
 
