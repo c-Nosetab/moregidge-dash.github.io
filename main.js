@@ -31,12 +31,15 @@ $(document).ready(function() {
     }
   }
 
-  window.onresize = function() {
-    console.log('hi');
-    if (window.innerWidth > 1028) {
+  $(window).on('resize', function() {
+    var win = $(this);
+    // console.log(win);
+    if (win.width() > 1028) {
+      console.log('yep')
       sidebar.css('display', 'block');
-    } else {
+    } else if (win.width() <= 1028) {
+      console.log('nope');
       sidebar.css('display', 'none');
     }
-  };
+  });
 
